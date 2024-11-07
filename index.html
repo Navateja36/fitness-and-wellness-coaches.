@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Workout Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Click or drag the blocks to build workout</h3>
+            <div class="block" draggable="true" data-distance="3">Warm Up</div>
+            <div class="block" draggable="true" data-distance="4" data-split="2">Two-Step Repeat</div>
+            <div class="block" draggable="true" data-distance="2">Active</div>
+            <div class="block" draggable="true" data-distance="1">Cooldown</div>
+            <div class="block" draggable="true" data-distance="5">Ramp Up</div>
+            <div class="block" draggable="true" data-distance="5">Ramp Down</div>
+        </aside>
+        <main class="main-content">
+            <div id="xAxisLabels" class="x-axis-labels"></div>  <!-- New div for axis labels -->
+            <div id="chart">
+                <canvas id="workoutChart"></canvas>
+            </div>
+            <button id="clearBtn">Clear Blocks</button>
+        </main>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
